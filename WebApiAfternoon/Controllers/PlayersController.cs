@@ -46,10 +46,10 @@ namespace WebApiAfternoon.Controllers
         public ActionResult<PlayerDto> Get(int id)
         {
             var player = players.FirstOrDefault(x => x.Id == id);
-            if (player == null)
-            {
-                return NotFound();
-            }
+            //if (player == null)
+            //{
+            //    return NotFound();
+            //}
             var dataToReturn = new PlayerDto
             {
                 PlayerName=player.PlayerName,
